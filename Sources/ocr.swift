@@ -191,7 +191,7 @@ struct MacOSVisionOCR: ParsableCommand {
     }
 
     private func isImageFile(_ filePath: String) -> Bool {
-        let imageExtensions = ["jpg", "jpeg", "png", "webp"]
+        let imageExtensions = ["jpg", "jpeg", "png", "webp", "pdf"]
         return imageExtensions.contains((filePath as NSString).pathExtension.lowercased())
     }
 
